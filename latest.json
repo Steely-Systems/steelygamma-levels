@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-28",
+  "stage": "open",
+  "generated_utc": "2026-10-29T04:16:37Z",
+  "oi_new": null,
+  "anchor": {
+    "time_et": "09:35",
+    "nq": 29930.75,
+    "ndx": 29778.88671875,
+    "qqq": 724.2169189453125,
+    "nq_contract": "NQZ26",
+    "nq_minus_ndx": 151.86,
+    "ndx_per_qqq": 41.1187
+  },
+  "nq": {
+    "ndx": {
+      "call_wall": 30151.75,
+      "call_wall_2": 31151.75,
+      "put_wall": 29151.75,
+      "put_wall_2": 28151.75,
+      "gamma_flip": 29555.25
+    },
+    "qqq": {
+      "call_wall": 29963.0,
+      "call_wall_2": 30168.5,
+      "put_wall": 28935.0,
+      "put_wall_2": 29757.25,
+      "gamma_flip": 30094.5
+    }
+  },
+  "ndx": {
+    "spot": 29778.88671875,
+    "call_wall": 30000.0,
+    "call_wall_2": 31000.0,
+    "put_wall": 29000.0,
+    "put_wall_2": 28000.0,
+    "gamma_flip": 29403.32087736529,
+    "call_wall_gex_bn": 0.4,
+    "call_wall_2_gex_bn": 0.395,
+    "put_wall_gex_bn": 0.428,
+    "put_wall_2_gex_bn": 0.348,
+    "net_gex_bn": 1.606,
+    "contracts": 5626,
+    "expiries": 41,
+    "oi_total": 189380
+  },
+  "qqq": {
+    "spot": 724.2169189453125,
+    "call_wall": 725.0,
+    "call_wall_2": 730.0,
+    "put_wall": 700.0,
+    "put_wall_2": 720.0,
+    "gamma_flip": 728.1964265895778,
+    "call_wall_gex_bn": 0.874,
+    "call_wall_2_gex_bn": 0.794,
+    "put_wall_gex_bn": 1.113,
+    "put_wall_2_gex_bn": 0.957,
+    "net_gex_bn": -1.655,
+    "contracts": 7834,
+    "expiries": 31,
+    "oi_total": 12983668
+  },
+  "notes": "Call wall / put wall = strike above / below spot with the largest call / put dollar gamma, across every expiration; *_2 is the runner-up strike, often nearly tied (compare the *_gex_bn values). Gamma flip = SteelyGamma's estimate of the spot where net dealer gamma (long calls, short puts) crosses zero; other providers' flips differ. Open interest is from the prior session (oi_new = false means it had not yet updated at run time). stage premarket (about 08:30 ET) is replaced by stage open (about 09:50 ET), anchored at 09:35. nq.* are the NDX and QQQ levels mapped to the anchor's NQ contract. Not trading advice."
+}
