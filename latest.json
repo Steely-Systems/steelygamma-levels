@@ -1,65 +1,64 @@
 {
   "date": "2026-11-11",
-  "stage": "premarket",
-  "generated_utc": "2026-11-11T13:30:23Z",
+  "stage": "open",
+  "generated_utc": "2026-11-11T14:50:21Z",
   "oi_new": true,
   "anchor": {
-    "time_et": "08:21",
-    "nq": 28386.25,
-    "ndx": 28287.03,
-    "qqq": 688.203,
-    "estimated_from": "2026-11-10 16:00 close",
+    "time_et": "09:35",
+    "nq": 28348.75,
+    "ndx": 28248.04296875,
+    "qqq": 687.1900024414062,
     "nq_contract": "NQZ26",
-    "nq_minus_ndx": 99.22,
-    "ndx_per_qqq": 41.1027
+    "nq_minus_ndx": 100.71,
+    "ndx_per_qqq": 41.1066
   },
   "nq": {
     "ndx": {
-      "call_wall": 29099.25,
-      "call_wall_2": 29774.25,
-      "put_wall": 28099.25,
-      "put_wall_2": 27099.25,
-      "gamma_flip": 28007.5
+      "call_wall": 29100.75,
+      "call_wall_2": 29775.75,
+      "put_wall": 28100.75,
+      "put_wall_2": 27100.75,
+      "gamma_flip": 28109.5
     },
     "qqq": {
-      "call_wall": 28871.25,
-      "call_wall_2": 28460.0,
-      "put_wall": 28049.0,
-      "put_wall_2": 27638.0,
-      "gamma_flip": 28412.5
+      "call_wall": 28875.25,
+      "call_wall_2": 28464.25,
+      "put_wall": 28053.25,
+      "put_wall_2": 27642.25,
+      "gamma_flip": 28386.25
     }
   },
   "ndx": {
-    "spot": 28287.033203125,
+    "spot": 28248.04296875,
     "call_wall": 29000.0,
     "call_wall_2": 29675.0,
     "put_wall": 28000.0,
     "put_wall_2": 27000.0,
-    "gamma_flip": 27908.404104956502,
-    "call_wall_gex_bn": 0.495,
-    "call_wall_2_gex_bn": 0.469,
-    "put_wall_gex_bn": 0.739,
-    "put_wall_2_gex_bn": 0.559,
-    "net_gex_bn": 1.634,
-    "contracts": 6574,
+    "gamma_flip": 28008.714780818445,
+    "call_wall_gex_bn": 0.486,
+    "call_wall_2_gex_bn": 0.457,
+    "put_wall_gex_bn": 0.742,
+    "put_wall_2_gex_bn": 0.569,
+    "net_gex_bn": 1.037,
+    "contracts": 6747,
     "expiries": 42,
-    "oi_total": 210511
+    "oi_total": 203976
   },
   "qqq": {
-    "spot": 688.2032684816576,
+    "spot": 687.1900024414062,
     "call_wall": 700.0,
     "call_wall_2": 690.0,
     "put_wall": 680.0,
     "put_wall_2": 670.0,
-    "gamma_flip": 688.8409044048807,
-    "call_wall_gex_bn": 1.111,
-    "call_wall_2_gex_bn": 0.66,
-    "put_wall_gex_bn": 1.151,
-    "put_wall_2_gex_bn": 0.801,
-    "net_gex_bn": -0.188,
-    "contracts": 8845,
+    "gamma_flip": 688.1021453090821,
+    "call_wall_gex_bn": 1.089,
+    "call_wall_2_gex_bn": 0.681,
+    "put_wall_gex_bn": 1.182,
+    "put_wall_2_gex_bn": 0.813,
+    "net_gex_bn": -0.268,
+    "contracts": 8853,
     "expiries": 31,
-    "oi_total": 14594900
+    "oi_total": 14292946
   },
   "notes": "Call wall / put wall = strike above / below spot with the largest call / put dollar gamma, across every expiration; *_2 is the runner-up strike, often nearly tied (compare the *_gex_bn values). Gamma flip = SteelyGamma's estimate of the spot where net dealer gamma (long calls, short puts) crosses zero; other providers' flips differ. Open interest is from the prior session (oi_new = false means it had not yet updated at run time). stage premarket (about 08:30 ET) is replaced by stage open (about 09:50 ET), anchored at 09:35. nq.* are the NDX and QQQ levels mapped to the anchor's NQ contract. Not trading advice."
 }
