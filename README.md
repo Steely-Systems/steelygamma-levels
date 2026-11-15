@@ -24,4 +24,9 @@ The walls are fixed for the day.
   `net_gex_bn` below 0 means dealers are short gamma.
 - `oi_new`: `false` if that day's open interest wasn't available yet at run time.
 
+## Archive
+Every published version is kept on the [`archive`](https://github.com/Steely-Systems/steelygamma-levels/tree/archive) branch as
+`archive/YYYY-MM-DD-premarket.json` and `archive/YYYY-MM-DD-open.json`, listed in `index.json`, from 2026-10-28 on. A workflow on this
+branch adds each new version there; it never changes `main`.
+
 Not trading advice.
