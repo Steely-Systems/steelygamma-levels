@@ -1,6 +1,6 @@
 # SteelyGamma levels
 
-Options-derived gamma levels for NQ futures (call wall, put wall, gamma flip), from SteelyLabs.
+Options-derived gamma levels for NQ and ES futures (call wall, put wall, gamma flip), from SteelyLabs. ES levels start with the 2026-11-16 files.
 
 **Levels:** https://raw.githubusercontent.com/Steely-Systems/steelygamma-levels/main/latest.json
 
@@ -22,6 +22,9 @@ The walls are fixed for the day.
   - `gamma_flip`: SteelyGamma's estimate of where net dealer gamma crosses zero. `null` if there's none within ±10%.
 - `ndx`, `qqq`: the same levels in index and QQQ prices. `*_gex_bn` is dollar gamma per 1% move, in billions.
   `net_gex_bn` below 0 means dealers are short gamma.
+- `es.spx` and `es.spy`: the same for ES, from S&P 500 index options and SPY options, mapped to the ES contract named in
+  `anchor.es_contract` (`anchor.es`, `anchor.spx`, `anchor.spy`, `anchor.es_minus_spx`, `anchor.spx_per_spy`); `spx` and `spy` hold
+  them in index and SPY prices. If the ES part could not run, `es_error` takes their place and the NQ levels are unaffected.
 - `oi_new`: `false` if that day's open interest wasn't available yet at run time.
 
 ## Archive
