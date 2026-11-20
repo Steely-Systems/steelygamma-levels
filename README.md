@@ -2,7 +2,15 @@
 
 Options-derived gamma levels for NQ and ES futures (call wall, put wall, gamma flip), from SteelyLabs. ES levels start with the 2026-11-16 files.
 
-**Levels:** https://raw.githubusercontent.com/Steely-Systems/steelygamma-levels/main/latest.json
+**Levels:** https://raw.githubusercontent.com/Steely-Systems/steelygamma-levels/main/latest-v2.json (since 2026-11-20) and
+https://raw.githubusercontent.com/Steely-Systems/steelygamma-levels/main/latest.json
+
+**Since 2026-11-20, read `latest-v2.json`.** The Nasdaq-100 index options behind `nq.ndx` and `ndx` aren't available at present,
+so NQ's levels come from QQQ options alone. `latest-v2.json` is written every run with `schema: 2`: the same fields as below,
+except that `nq.ndx` and `ndx` are missing and `ndx_error` says why when the index options aren't available. `latest.json` keeps its
+original shape (with `nq.ndx` and `ndx`) and is updated only on runs where the index options were available, so until then it stays
+at 2026-11-19 open. The implied volatility behind the levels is now estimated from option quotes (the walls themselves are set by
+open interest).
 
 ## When it updates
 Each weekday, in two stages (the `stage` field):
@@ -29,7 +37,8 @@ The walls are fixed for the day.
 
 ## Archive
 Every published version is kept on the [`archive`](https://github.com/Steely-Systems/steelygamma-levels/tree/archive) branch as
-`archive/YYYY-MM-DD-premarket.json` and `archive/YYYY-MM-DD-open.json`, listed in `index.json`, from 2026-10-28 on. A workflow on this
-branch adds each new version there; it never changes `main`.
+`archive/YYYY-MM-DD-premarket.json` and `archive/YYYY-MM-DD-open.json`, listed in `index.json`, from 2026-10-28 on; `latest-v2.json`'s
+versions are kept as `archive/v2/YYYY-MM-DD-<stage>.json`, listed in `index-v2.json`, from 2026-11-20 on. A workflow on this branch
+adds each new version there; it never changes `main`.
 
 Not trading advice.
