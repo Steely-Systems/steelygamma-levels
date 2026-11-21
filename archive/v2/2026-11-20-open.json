@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-20",
+  "stage": "open",
+  "generated_utc": "2026-11-21T02:34:49Z",
+  "oi_new": true,
+  "anchor": {
+    "time_et": "09:35",
+    "nq": 26165.0,
+    "ndx": 26107.701171875,
+    "qqq": 635.010009765625,
+    "nq_contract": "NQZ26",
+    "nq_minus_ndx": 57.3,
+    "ndx_per_qqq": 41.1138,
+    "es": 7154.0,
+    "spx": 7135.52978515625,
+    "spy": 712.0800170898438,
+    "es_contract": "ESZ26",
+    "es_minus_spx": 18.47,
+    "spx_per_spy": 10.0207
+  },
+  "nq": {
+    "qqq": {
+      "call_wall": 28837.0,
+      "call_wall_2": 28014.75,
+      "put_wall": 24725.5,
+      "put_wall_2": 25959.0,
+      "gamma_flip": 27993.75
+    }
+  },
+  "ndx_error": "NDX levels were not computed this run (HTTPError).",
+  "qqq": {
+    "spot": 635.010009765625,
+    "call_wall": 700.0,
+    "call_wall_2": 680.0,
+    "put_wall": 600.0,
+    "put_wall_2": 630.0,
+    "gamma_flip": 679.4889253887287,
+    "call_wall_gex_bn": 0.368,
+    "call_wall_2_gex_bn": 0.234,
+    "put_wall_gex_bn": 0.405,
+    "put_wall_2_gex_bn": 0.33,
+    "net_gex_bn": -3.514,
+    "contracts": 6750,
+    "expiries": 26,
+    "oi_total": 14760976
+  },
+  "es": {
+    "spx": {
+      "call_wall": 8018.5,
+      "call_wall_2": 7718.5,
+      "put_wall": 7018.5,
+      "put_wall_2": 6018.5,
+      "gamma_flip": 7516.0
+    },
+    "spy": {
+      "call_wall": 7784.5,
+      "call_wall_2": 8035.0,
+      "put_wall": 7033.0,
+      "put_wall_2": 6782.5,
+      "gamma_flip": 7548.25
+    }
+  },
+  "spx": {
+    "spot": 7135.52978515625,
+    "call_wall": 8000.0,
+    "call_wall_2": 7700.0,
+    "put_wall": 7000.0,
+    "put_wall_2": 6000.0,
+    "gamma_flip": 7497.489992906038,
+    "call_wall_gex_bn": 15.292,
+    "call_wall_2_gex_bn": 4.149,
+    "put_wall_gex_bn": 31.234,
+    "put_wall_2_gex_bn": 3.83,
+    "net_gex_bn": -58.733,
+    "contracts": 20053,
+    "expiries": 47,
+    "oi_total": 25357757
+  },
+  "spy": {
+    "spot": 712.0800170898438,
+    "call_wall": 775.0,
+    "call_wall_2": 800.0,
+    "put_wall": 700.0,
+    "put_wall_2": 675.0,
+    "gamma_flip": 751.4198861839312,
+    "call_wall_gex_bn": 0.438,
+    "call_wall_2_gex_bn": 0.359,
+    "put_wall_gex_bn": 1.458,
+    "put_wall_2_gex_bn": 0.666,
+    "net_gex_bn": -8.304,
+    "contracts": 8306,
+    "expiries": 29,
+    "oi_total": 18335133
+  },
+  "notes": "Call wall / put wall = strike above / below spot with the largest call / put dollar gamma, across every expiration; *_2 is the runner-up strike, often nearly tied (compare the *_gex_bn values). Gamma flip = SteelyGamma's estimate of the spot where net dealer gamma (long calls, short puts) crosses zero; other providers' flips differ. Open interest is from the prior session (oi_new = false means it had not yet updated at run time). stage premarket (about 08:30 ET) is replaced by stage open (about 09:50 ET), anchored at 09:35. nq.* are the NDX and QQQ levels mapped to the anchor's NQ contract; es.* are the SPX and SPY levels mapped to the anchor's ES contract (es_error instead when they could not be computed). Not trading advice. latest-v2.json: NQ levels from QQQ and, when NDX options are available, NDX (ndx_error instead when not); latest.json keeps the original shape and is updated only when NDX is available.",
+  "schema": 2
+}
