@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25-open",
+  "updated": "2026-11-26-premarket",
   "files": [
     "2026-11-20-open.json",
     "2026-11-23-open.json",
@@ -7,6 +7,7 @@
     "2026-11-24-open.json",
     "2026-11-24-premarket.json",
     "2026-11-25-open.json",
-    "2026-11-25-premarket.json"
+    "2026-11-25-premarket.json",
+    "2026-11-26-premarket.json"
   ]
 }
