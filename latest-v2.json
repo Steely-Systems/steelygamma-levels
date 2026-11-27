@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "stage": "premarket",
-  "generated_utc": "2026-11-26T13:31:03Z",
+  "generated_utc": "2026-11-27T13:31:08Z",
   "oi_new": false,
   "anchor": {
     "time_et": "23:59",
@@ -22,27 +22,27 @@
   },
   "nq": {
     "qqq": {
-      "call_wall": 28004.25,
-      "call_wall_2": 28826.25,
+      "call_wall": 26771.25,
+      "call_wall_2": 28004.25,
       "put_wall": 26360.25,
       "put_wall_2": 26154.75,
-      "gamma_flip": 27254.5
+      "gamma_flip": 27285.75
     }
   },
   "ndx_error": "NDX levels are not computed; NQ levels come from QQQ.",
   "qqq": {
     "spot": 640.7198258551297,
-    "call_wall": 680.0,
-    "call_wall_2": 700.0,
+    "call_wall": 650.0,
+    "call_wall_2": 680.0,
     "put_wall": 640.0,
     "put_wall_2": 635.0,
-    "gamma_flip": 661.7603612814041,
-    "call_wall_gex_bn": 0.471,
-    "call_wall_2_gex_bn": 0.445,
-    "put_wall_gex_bn": 0.616,
-    "put_wall_2_gex_bn": 0.479,
-    "net_gex_bn": -3.246,
-    "contracts": 7330,
+    "gamma_flip": 662.517747734053,
+    "call_wall_gex_bn": 0.463,
+    "call_wall_2_gex_bn": 0.449,
+    "put_wall_gex_bn": 0.748,
+    "put_wall_2_gex_bn": 0.547,
+    "net_gex_bn": -3.911,
+    "contracts": 6920,
     "expiries": 29,
     "oi_total": 14280233,
     "oi_date": "2026-11-24"
@@ -52,15 +52,15 @@
       "call_wall": 8014.0,
       "call_wall_2": 7514.0,
       "put_wall": 7014.0,
-      "put_wall_2": 7214.0,
-      "gamma_flip": 7462.75
+      "put_wall_2": 7164.0,
+      "gamma_flip": 7667.5
     },
     "spy": {
       "call_wall": 7330.0,
       "call_wall_2": 7530.5,
       "put_wall": 7029.25,
       "put_wall_2": 7229.75,
-      "gamma_flip": 7403.25
+      "gamma_flip": 7400.0
     }
   },
   "spx": {
@@ -68,14 +68,14 @@
     "call_wall": 8000.0,
     "call_wall_2": 7500.0,
     "put_wall": 7000.0,
-    "put_wall_2": 7200.0,
-    "gamma_flip": 7448.841946015838,
-    "call_wall_gex_bn": 15.084,
-    "call_wall_2_gex_bn": 5.317,
-    "put_wall_gex_bn": 36.027,
-    "put_wall_2_gex_bn": 5.55,
-    "net_gex_bn": -55.38,
-    "contracts": 23291,
+    "put_wall_2": 7150.0,
+    "gamma_flip": 7653.380513060528,
+    "call_wall_gex_bn": 6.147,
+    "call_wall_2_gex_bn": 4.227,
+    "put_wall_gex_bn": 14.384,
+    "put_wall_2_gex_bn": 2.879,
+    "net_gex_bn": -33.115,
+    "contracts": 7864,
     "expiries": 47,
     "oi_total": 24061654,
     "oi_date": "2026-11-24"
@@ -86,13 +86,13 @@
     "call_wall_2": 750.0,
     "put_wall": 700.0,
     "put_wall_2": 720.0,
-    "gamma_flip": 737.319132152438,
-    "call_wall_gex_bn": 0.649,
-    "call_wall_2_gex_bn": 0.628,
-    "put_wall_gex_bn": 1.775,
-    "put_wall_2_gex_bn": 0.806,
-    "net_gex_bn": -7.024,
-    "contracts": 8618,
+    "gamma_flip": 737.0003663830781,
+    "call_wall_gex_bn": 0.673,
+    "call_wall_2_gex_bn": 0.58,
+    "put_wall_gex_bn": 1.813,
+    "put_wall_2_gex_bn": 0.944,
+    "net_gex_bn": -8.203,
+    "contracts": 7601,
     "expiries": 29,
     "oi_total": 16428424,
     "oi_date": "2026-11-24"
